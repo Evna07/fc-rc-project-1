@@ -1,0 +1,21 @@
+//import breakpoints
+@import "styles/breakpoints.scss";
+
+.actionButton {
+  font-weight: 600;
+  font-size: 18px;
+  width: 164px;
+  height: 42px;
+
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--main-font-color);
+  border: 3px solid var(--main-font-color);
+
+  @include media(">=laptop") {
+    &:hover {
+      transition: 1s;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
