@@ -54,7 +54,7 @@
       }
     }
 
-    a {
+    .navOption {
       text-decoration: none;
       color: var(--white-color);
 
@@ -105,6 +105,12 @@
       svg {
         width: 30px;
         height: 30px;
+      }
+    }
+
+    @include media(">=laptop") {
+      .disabledLink {
+        cursor: not-allowed;
       }
     }
   }

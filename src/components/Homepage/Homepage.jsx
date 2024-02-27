@@ -1,9 +1,10 @@
 import Button from "./Button/Button";
 import styles from "./Homepage.module.scss";
+import clsx from "clsx";
 
 const Homepage = () => {
   return (
-    <section className={styles.homeContainer}>
+    <section className={clsx(".container", styles.homeContainer)}>
       <div className={styles.backgroundContainer}>
         <div className={styles.homeIntro}>
           <h1>Nasza firma oferuje najwyższej jakości produkty.</h1>

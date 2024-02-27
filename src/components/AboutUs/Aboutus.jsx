@@ -1,10 +1,14 @@
 import { nanoid } from "nanoid";
 import styles from "./Aboutus.module.scss";
 import { persons } from "../../data/personOptions";
+import clsx from "clsx";
 
 const Aboutus = () => {
   return (
-    <section className={styles.aboutUsContainer} id="aboutUs">
+    <section
+      className={clsx(".container", styles.aboutUsContainer)}
+      id="aboutUs"
+    >
       <h1>Nasi specjaliści</h1>
       <ul className={styles.aboutUsList}>
         {persons.map((person) => (
