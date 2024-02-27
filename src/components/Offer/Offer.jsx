@@ -4,7 +4,7 @@ import { offerItems } from "data/offerOptions";
 
 const Offer = () => {
   return (
-    <section className={styles.offerContainer}>
+    <section className={styles.offerContainer} id="offer">
       <h1>Czym zajmuje się nasza firma?</h1>
       <ul className={styles.offerList}>
         {offerItems.map((item) => (

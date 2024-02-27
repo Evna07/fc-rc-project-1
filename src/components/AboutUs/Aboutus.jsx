@@ -4,7 +4,7 @@ import { persons } from "../../data/personOptions";
 
 const Aboutus = () => {
   return (
-    <section className={styles.aboutUsContainer}>
+    <section className={styles.aboutUsContainer} id="aboutUs">
       <h1>Nasi specjaliści</h1>
       <ul className={styles.aboutUsList}>
         {persons.map((person) => (
