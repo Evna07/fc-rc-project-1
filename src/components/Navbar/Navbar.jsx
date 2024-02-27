@@ -27,23 +27,16 @@ const Navbar = () => {
           <ul className={styles.navlinks}>
             {navOptions.map((option) => (
               <li key={nanoid()}>
-                {option.isScroll && (
-                  <a
-                    className={styles.navOption}
-                    onClick={closeMenuOnMobile}
-                    href={option.path}
-                  >
-                    {option.name}
-                  </a>
-                )}
-                {!option.isScroll && (
-                  <a
-                    className={clsx(styles.navOption, styles.disabledLink)}
-                    href="\"
-                  >
-                    {option.name}
-                  </a>
-                )}
+                <a
+                  className={clsx(
+                    styles.navOption,
+                    option.isScroll ? styles.enabledLink : styles.disabledLink
+                  )}
+                  onClick={closeMenuOnMobile}
+                  href={option.path}
+                >
+                  {option.name}
+                </a>
               </li>
             ))}
           </ul>

@@ -59,12 +59,26 @@
       color: var(--white-color);
 
       padding: 23px 30px;
-      transition: background-color 0.4s;
-      transition: color 0.4s;
+    }
+
+    .enabledLink {
+      transition: background-color 0.4s, color 0.4s;
 
       @include media(">=laptop") {
         cursor: pointer;
 
+        &:hover {
+          color: var(--secondary-font-color);
+          background-color: var(--active-color);
+
+          transition: 0.4s;
+        }
+      }
+    }
+
+    .disabledLink {
+      @include media(">=laptop") {
+        cursor: not-allowed;
         &:hover {
           color: var(--secondary-font-color);
           background-color: var(--active-color);
@@ -105,12 +119,6 @@
       svg {
         width: 30px;
         height: 30px;
-      }
-    }
-
-    @include media(">=laptop") {
-      .disabledLink {
-        cursor: not-allowed;
       }
     }
   }
