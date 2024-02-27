@@ -33,7 +33,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 20px;
+      margin: 0 50px;
 
       .personName {
         font-weight: 700;
@@ -48,5 +48,34 @@
         margin: 5px;
       }
     }
+
+    .listItem:nth-of-type(odd) {
+      .person {
+        background-color: var(--main-background);
+      }
+    }
+    .listItem:nth-of-type(even) {
+      .person {
+        background-color: var(--secondary-background);
+      }
+    }
+
+    .listItem {
+      @include media(">=laptop") {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .listItem:nth-of-type(even) {
+      @include media(">=laptop") {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  @include media(">=laptop") {
+    align-items: initial;
   }
 }

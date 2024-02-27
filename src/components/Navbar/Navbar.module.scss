@@ -68,6 +68,8 @@
         &:hover {
           color: var(--secondary-font-color);
           background-color: var(--active-color);
+
+          transition: 0.4s;
         }
       }
     }

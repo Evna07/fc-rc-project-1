@@ -1,13 +1,14 @@
 import { nanoid } from "nanoid";
 import styles from "./Aboutus.module.scss";
+import { persons } from "../../data/personOptions";
 
-const Aboutus = ({ persons }) => {
+const Aboutus = () => {
   return (
     <section className={styles.aboutUsContainer}>
       <h1>Nasi specjaliści</h1>
       <ul className={styles.aboutUsList}>
         {persons.map((person) => (
-          <li key={nanoid()}>
+          <li key={nanoid()} className={styles.listItem}>
             <div className={styles.person}>
               <img
                 className={styles.personImg}

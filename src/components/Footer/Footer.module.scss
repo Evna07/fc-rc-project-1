@@ -1,3 +1,6 @@
+//import breakpoints
+@import "styles/breakpoints.scss";
+
 .footer {
   padding: 40px 0;
 
@@ -24,5 +27,14 @@
         padding: 10px;
       }
     }
+
+    @include media(">=laptop") {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  @include media(">=laptop") {
+    padding: 10px 0;
   }
 }

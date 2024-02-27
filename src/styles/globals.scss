@@ -51,13 +51,13 @@ body {
 
 h1,
 .h1 {
-  font-size: 47px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.5;
 
-  @include media(">=laptop") {
-    font-size: 28px;
-  }
+  // @include media(">=laptop") {
+  //   font-size: 28px;
+  // }
 }
 
 h2,
