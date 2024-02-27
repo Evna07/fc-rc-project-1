@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="disabled">
       <div className={clsx("container", styles.footerWrapper)}>
         <p>Nazwa firmy - wszelkie prawa zastrzeżone, 2019</p>
 

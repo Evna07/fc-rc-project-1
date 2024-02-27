@@ -47,10 +47,6 @@
         @include media(">=laptop") {
           padding: 0;
         }
-
-        .disabledLink {
-          pointer-events: none;
-        }
       }
     }
 
@@ -61,24 +57,27 @@
       padding: 23px 30px;
     }
 
+    .disabledLink {
+      transition: background-color 0.4s, color 0.4s;
+
+      @include media(">=laptop") {
+        cursor: not-allowed;
+
+        // &:hover {
+        //   color: var(--secondary-font-color);
+        //   background-color: var(--active-color);
+
+        //   transition: 0.4s;
+        // }
+      }
+    }
+
     .enabledLink {
       transition: background-color 0.4s, color 0.4s;
 
       @include media(">=laptop") {
         cursor: pointer;
 
-        &:hover {
-          color: var(--secondary-font-color);
-          background-color: var(--active-color);
-
-          transition: 0.4s;
-        }
-      }
-    }
-
-    .disabledLink {
-      @include media(">=laptop") {
-        cursor: not-allowed;
         &:hover {
           color: var(--secondary-font-color);
           background-color: var(--active-color);
