@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Person from "./Person/Person";
 
 const AboutUs = () => {
-  //change to udpate repo
   return (
     <section className={styles.aboutUsContainer} id="aboutUs">
       <div className={clsx("container", styles.aboutUsWrapper)}>
