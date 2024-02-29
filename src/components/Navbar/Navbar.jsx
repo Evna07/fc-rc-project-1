@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className={clsx(styles.menu, showMenu && styles.showMenu)}>
             <ul className={styles.navlinks}>
               {navOptions.map((option) => (
-                <li key={nanoid()}>
+                <li className={styles.navListItem} key={nanoid()}>
                   <a
                     className={clsx(
                       styles.navOption,

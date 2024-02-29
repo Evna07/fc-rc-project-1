@@ -19,8 +19,6 @@
   justify-content: space-between;
   align-items: center;
 
-  gap: 200px;
-
   position: relative;
 
   .navname {
@@ -39,13 +37,13 @@
       justify-content: flex-end;
       gap: 25px;
     }
+  }
 
-    li {
-      padding: 20px 30px;
+  .navListItem {
+    padding: 20px 30px;
 
-      @include media(">=laptop") {
-        padding: 0;
-      }
+    @include media(">=laptop") {
+      padding: 0;
     }
   }
 

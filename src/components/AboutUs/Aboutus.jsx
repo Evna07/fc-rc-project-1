@@ -1,12 +1,13 @@
 import { nanoid } from "nanoid";
 import styles from "./AboutUs.module.scss";
 import { persons } from "../../data/personOptions";
+import clsx from "clsx";
 
 const AboutUs = () => {
   return (
     <section className={styles.aboutUsContainer} id="aboutUs">
-      <div className="container">
-        <h1>Nasi specjaliści</h1>
+      <div className={clsx("container", styles.aboutUsWrapper)}>
+        <h1 className={styles.aboutUsTitle}>Nasi specjaliści</h1>
         <ul className={styles.aboutUsList}>
           {persons.map((person) => (
             <li key={nanoid()} className={styles.listItem}>
