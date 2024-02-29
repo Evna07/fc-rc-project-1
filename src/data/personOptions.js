@@ -6,12 +6,14 @@ export const persons = [
     name: "Imię Nazwisko [ Dział 1]",
     description: description,
     image:
-      "https://doodleipsum.com/700x700/avatar-5?i=c3fb7f663953a463ba30ffde7ce73077",
+      "https://doodleipsum.com/700x700/avatar-5?i=8681bf2c52b059c56e2f4dec33c335be",
   },
   {
     name: "Imię Nazwisko [ Dział 2]",
     description: description,
     image:
-      "https://doodleipsum.com/700x700/avatar-5?i=8681bf2c52b059c56e2f4dec33c335be",
+      "https://doodleipsum.com/700x700/avatar-5?i=c3fb7f663953a463ba30ffde7ce73077",
   },
 ];
+
+//przerobic portrety zeby byly ladowane z plikow

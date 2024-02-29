@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import styles from "./Footer.module.scss";
-import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -10,10 +11,10 @@ const Footer = () => {
 
         <div className={styles.footerIcons}>
           <a href="https://www.instagram.com/">
-            <FaInstagram />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a href="https://www.facebook.com/">
-            <FaFacebookSquare />
+            <FontAwesomeIcon icon={faFacebook} />
           </a>
         </div>
       </div>

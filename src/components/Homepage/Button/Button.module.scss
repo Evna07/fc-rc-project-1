@@ -11,8 +11,9 @@
   border: 3px solid var(--main-font-color);
 
   @include media(">=laptop") {
+    transition: 1s;
+
     &:hover {
-      transition: 1s;
       background-color: #fff;
       color: #000;
     }

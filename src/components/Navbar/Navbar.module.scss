@@ -12,105 +12,103 @@
   align-items: center;
 
   font-size: 18px;
+}
 
-  .navbar {
-    width: 90%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 200px;
+
+  position: relative;
+
+  .navname {
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .navlinks {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
 
-    gap: 200px;
-
-    position: relative;
-
-    .navname {
-      font-weight: 700;
-      flex-shrink: 0;
+    @include media(">=laptop") {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 25px;
     }
 
-    .navlinks {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 30px;
+    li {
+      padding: 20px 30px;
 
       @include media(">=laptop") {
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 25px;
-      }
-
-      li {
-        padding: 20px 30px;
-
-        @include media(">=laptop") {
-          padding: 0;
-        }
-      }
-    }
-
-    .navOption {
-      text-decoration: none;
-      color: var(--white-color);
-
-      padding: 23px 30px;
-    }
-
-    .disabledLink {
-      transition: background-color 0.4s, color 0.4s;
-
-      @include media(">=laptop") {
-        cursor: not-allowed;
-      }
-    }
-
-    .enabledLink {
-      transition: background-color 0.4s, color 0.4s;
-
-      @include media(">=laptop") {
-        cursor: pointer;
-
-        &:hover {
-          color: var(--secondary-font-color);
-          background-color: var(--active-color);
-
-          transition: 0.4s;
-        }
-      }
-    }
-
-    .menu {
-      width: 100%;
-      height: 100%;
-
-      padding: 20px 0;
-      background-color: var(--main-background);
-
-      position: fixed;
-      top: 45px;
-      right: -100%;
-
-      transition: right 0.4s;
-
-      @include media(">=laptop") {
-        position: initial;
         padding: 0;
       }
     }
+  }
 
-    .showMenu {
-      right: 0;
+  .navOption {
+    text-decoration: none;
+    color: var(--white-color);
+
+    padding: 23px 30px;
+  }
+
+  .disabledLink {
+    transition: background-color 0.4s, color 0.4s;
+
+    @include media(">=laptop") {
+      cursor: not-allowed;
+    }
+  }
+
+  .enabledLink {
+    transition: background-color 0.4s, color 0.4s;
+
+    @include media(">=laptop") {
+      cursor: pointer;
+      transition: 0.4s;
+
+      &:hover {
+        color: var(--secondary-font-color);
+        background-color: var(--active-color);
+      }
+    }
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0;
+    background-color: var(--main-background);
+
+    position: fixed;
+    top: 45px;
+    right: -100%;
+
+    transition: right 0.4s;
+
+    @include media(">=laptop") {
+      position: initial;
+      padding: 0;
+    }
+  }
+
+  .showMenu {
+    right: 0;
+  }
+
+  .navButton {
+    @include media(">=laptop") {
+      display: none;
     }
 
-    .navButton {
-      @include media(">=laptop") {
-        display: none;
-      }
-
-      svg {
-        width: 30px;
-        height: 30px;
-      }
+    svg {
+      width: 30px;
+      height: 30px;
     }
   }
 }

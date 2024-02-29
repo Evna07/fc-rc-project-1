@@ -19,30 +19,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={clsx(".container", styles.navContainer)}>
-      <div className={styles.navbar}>
-        <p className={styles.navname}>Nazwa Firmy</p>
+    <nav className={styles.navContainer}>
+      <div className="container">
+        <div className={styles.navbar}>
+          <p className={styles.navname}>Nazwa Firmy</p>
 
-        <div className={clsx(styles.menu, showMenu && styles.showMenu)}>
-          <ul className={styles.navlinks}>
-            {navOptions.map((option) => (
-              <li key={nanoid()}>
-                <a
-                  className={clsx(
-                    styles.navOption,
-                    option.isScroll ? styles.enabledLink : styles.disabledLink
-                  )}
-                  onClick={closeMenuOnMobile}
-                  href={option.path}
-                >
-                  {option.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.navButton} onClick={toggleMenu}>
-          {showMenu ? <IoClose /> : <IoMenu />}
+          <div className={clsx(styles.menu, showMenu && styles.showMenu)}>
+            <ul className={styles.navlinks}>
+              {navOptions.map((option) => (
+                <li key={nanoid()}>
+                  <a
+                    className={clsx(
+                      styles.navOption,
+                      option.isScroll ? styles.enabledLink : styles.disabledLink
+                    )}
+                    onClick={closeMenuOnMobile}
+                    href={option.path}
+                  >
+                    {option.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.navButton} onClick={toggleMenu}>
+            {showMenu ? <IoClose /> : <IoMenu />}
+          </div>
         </div>
       </div>
     </nav>

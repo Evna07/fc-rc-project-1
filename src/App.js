@@ -1,19 +1,19 @@
 import Footer from "components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "components/Navbar/Navbar";
 import Homepage from "components/Homepage/Homepage";
-import Aboutus from "components/AboutUs/Aboutus";
+import AboutUs from "components/AboutUs/AboutUs";
 import Offer from "components/Offer/Offer";
 
-function App() {
+const App = () => {
   return (
-    <div className="container">
+    <>
       <Navbar />
       <Homepage />
-      <Aboutus />
+      <AboutUs />
       <Offer />
       <Footer />
-    </div>
+    </>
   );
-}
+};
 
 export default App;

@@ -2,7 +2,7 @@
 @import "./variables.scss";
 @import "./breakpoints.scss";
 @import "include-media";
-
+@import "@fortawesome/fontawesome-svg-core/styles.css";
 @import "reset-css";
 
 * {
@@ -24,11 +24,10 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 8px;
 
   @include media(">=laptop") {
-    padding: 0 8px;
     width: 960px;
-    padding: 0;
   }
 }
 

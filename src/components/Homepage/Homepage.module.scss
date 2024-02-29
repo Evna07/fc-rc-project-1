@@ -3,23 +3,24 @@
   color: var(--main-font-color);
 
   // Obraz autorstwa freepik
-  background-image: url("https://img.freepik.com/darmowe-zdjecie/zdjecie-skladu-bujnych-roslin-tropikalnych_125540-4267.jpg?t=st=1708984914~exp=1708988514~hmac=00e7f3484b7ccd92f6ea5fc6b050482d160ca746f796322d18a93865c8afe2c5&w=1380");
+  background-image: url("../../../public/background_home.avif");
   background-size: cover;
   background-position: center;
+}
 
-  .backgroundContainer {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+.backgroundContainer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 
-    .homeIntro {
-      height: 100%;
-      width: 70%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      gap: 40px;
-      padding: 0 40px;
-    }
-  }
+.homeIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 40px;
 }
