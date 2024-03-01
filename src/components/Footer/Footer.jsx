@@ -5,7 +5,7 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <section className={styles.footer} id="disabled">
+    <footer className={styles.footerContainer} id="disabled">
       <div className={clsx("container", styles.footerWrapper)}>
         <p>Nazwa firmy - wszelkie prawa zastrzeżone, 2019</p>
 
@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

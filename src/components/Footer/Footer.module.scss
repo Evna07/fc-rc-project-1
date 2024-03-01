@@ -1,6 +1,6 @@
 @import "styles/breakpoints.scss";
 
-.footer {
+.footerContainer {
   padding: 40px 0;
 
   background-color: var(--main-background);
@@ -36,6 +36,6 @@
 
   @include media(">=laptop") {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 }

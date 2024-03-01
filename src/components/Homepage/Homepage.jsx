@@ -7,7 +7,9 @@ const Homepage = () => {
       <div className={styles.backgroundContainer}>
         <div className="container">
           <div className={styles.homeIntro}>
-            <h1>Nasza firma oferuje najwyższej jakości produkty.</h1>
+            <h1 className={styles.homepageTitle}>
+              Nasza firma oferuje najwyższej jakości produkty.
+            </h1>
             <p>Nie wierz nam na słowo - sprawdź</p>
             <Button />
           </div>
